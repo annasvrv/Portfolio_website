@@ -5,15 +5,15 @@
 }
 
 body {
-  margin: 60px auto;
-  max-width: 800px;
-  text-align: center;
+  margin: 0px auto;
+  /* max-width: 800px; */
 }
 
 h1,
 h2,
 h3 {
-  margin: 0 auto;
+  text-align: center;
+  margin: 0;
 }
 
 h1 {
@@ -29,62 +29,92 @@ h3 {
   opacity: 0.7;
 }
 
-a {
-  color: var(--primary-color);
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
 }
 
 .navigation-links {
-  margin-top: 40px;
   display: flex;
+  margin-top: 40px;
   justify-content: center;
 }
 
 .navigation-links a {
   margin: 20px;
-  padding: 20px 15px;
-  font-size: 20px;
-  border: 1px solid var(--primary-color);
   border-radius: 4px;
+  padding: 20px 15px;
   text-decoration: none;
+  text-transform: capitalize;
 }
 
-.contact {
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
+.contact-link {
+  background: var(--primary-color);
   box-shadow: var(--box-shadow);
-  text-transform: capitalize;
+  color: white;
 }
 
-.about {
-  text-transform: capitalize;
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
-.content {
-  margin: 30px 0;
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.about-paragraphs {
   display: flex;
-  text-align: left;
+  margin: 30px 0;
 }
 
-.content p {
+.about-paragraphs p {
   margin: 10px;
 }
 
-p {
-  padding: 20px;
-  background: var(--secondary-color);
-  border-radius: 4px;
-  font-size: 18px;
-  text-align: center;
-  line-height: 1.5;
-}
-
-.mail {
+.email-link {
   display: flex;
   justify-content: center;
-  text-decoration: none;
+  color: var(--primary-color);
   font-size: 28px;
+  text-decoration: none;
 }
 
-.mail:hover {
+.email-link:hover {
   text-decoration: underline;
+}
+
+.app-description {
+  text-align: left;
+}
+
+.application-link {
+  padding: 20px 15px;
+  text-decoration: none;
+  background: var(--primary-color);
+  color: white;
+  text-transform: capitalize;
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  #contact {
+    margin-bottom: 40px;
+  }
+
+  p,
+  .app-description,
+  .app-link {
+    text-align: center;
+  }
 }

@@ -118,3 +118,12 @@ p {
     text-align: center;
   }
 }
+
+@media (max-width: 350px) {
+  .contact-link,
+  .about-link {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+}
